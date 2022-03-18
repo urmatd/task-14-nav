@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV-Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="site">
+          <div>
+            <p class="name">UD</p>
+          </div>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li class="header-menu-item">
+              <a href="#home" class="header-menu-link nav-name">Home</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#skills" class="header-menu-link nav-name">Skills</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#portfolio" class="header-menu-link nav-name"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header-menu-item nav-name">
+              <a href="#languages" class="header-menu-link nav-name"
+                >Languages</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a href="#education" class="header-menu-link nav-name"
+                >Education</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="nav-button" onClick="navFunc()">
+          <span class="sr-only">MENU</span>
+        </button>
+      </div>
+    </header>
+
+    <script>
+      function navFunc() {
+        document.querySelector("html").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
